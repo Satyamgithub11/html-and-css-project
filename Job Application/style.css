@@ -45,3 +45,54 @@ label{
     margin-bottom: 5px;
 
 }
+
+input,
+select,
+textarea {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+input:focus {
+    outline-color: red;
+}
+
+.button_container{
+    display: flex;
+
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button{
+    background-color: red;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    transition: 03s ease-in;
+}
+
+button:hover{
+    background-color: #ccc;
+    border: 2px solid red;
+    color: black;
+    transition: 03s ease-in;
+    cursor: pointer;
+}
+
+.textarea_control{
+    grid-column: 1/ span 2;
+}
+
+.textarea_control textarea {
+    width: 100%;
+}
+
+@media(max-width: 460px) {
+    .textarea_control{
+        grid-column: 1 span 1;
+    }
+    
+}
